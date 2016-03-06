@@ -2,30 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <div class="page-header__logo">
-        <h1>Pink</h1>
+        <strong>Pink</strong>
       </div>
       <nav class="main-nav">
         <span class="main-nav__toggle main-nav__toggle--closed"></span>
         <div class="main-nav__container main-nav__container--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Информация</a></li>
-            <li class="main-nav__list-item"><a href="#">Возможность</a></li>
-            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
-            <li class="main-nav__list-item"><a href="#">Стоимость</a></li>
+            <li class="main-nav__item"><a class="main-class___items" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-class___items" href="#">Возможность</a></li>
+            <li class="main-nav__item"><a class="main-class___items" href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-class___items" href="#">Стоимость</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-impress">
-          <div class="main-impress__slogan">Взгляните на жизнь иначе!</div>
-      </section>
+      <div class="main-impress">
+          <span>Взгляните на жизнь иначе!</span>
+      </div>
       <section class="action">
         <a class="action__btn action__btn--download" href="http://www.appstore.com">Скачать приложение</a>
           <ul class="action__stores">
@@ -61,25 +61,24 @@
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </article>
-          <img class="promo-image" src="#" width="157" height="320" alt="Приложение PINK">
         </section>
         <section class="feedback">
         <div class="feedback__container">
-          <div class="feedback__item--first">
+          <div class="feedback__item">
             <h3 class="feedback__title">Николай Петров</h3>
             <blockquote class="feedback__description">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </blockquote>
           </div>
-          <div class="feedback__item--second">
+          <div class="feedback__item">
             <h3 class="feedback__title">Анна Михайлова</h3>
             <blockquote class="feedback__description">
               «Нельзя, чтобы такое приложение оставалось только моим открытием!
               Спешу поделится им со всем миром, ребята если вы хотите ярких красок и новых ощущений - качайте PINK!»
             </blockquote>
           </div>
-          <div class="feedback__item--third">
+          <div class="feedback__item">
             <h3 class="feedback__title">Александр Немчук</h3>
             <blockquote class="feedback__description">
               «Будьте проще и понятнее для окружающих, дарите хорошее настроение окружающим!
@@ -186,5 +185,7 @@
       <div id="YMapsID" style="width:320px;height:320px"></div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  </div>
   </body>
 </html>
