@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - Фотогаллерея</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <strong>Pink</strong>
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toggle main-nav__toggle--closed"></span>
+        <div class="main-nav__container main-nav__container--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-class__items" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-class__items" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-class__items" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-class__items" href="http://www.htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="page-inner">
+      <div class="main-impress">
+        <span>Фотографии пользователей</span>
+      </div>
+      <section class="inner-gallery">
+        <p class="inner-gallery__description">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+        <article class="author-post">
+          <a class="<author-post__best" href="#">
+            <img src="img/panorama.jpg" width="320" height="137" alt="Анна">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Анна </span>(5 минут назад)
+            <p class="author-post_description">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 215</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-1.jpg" width="280" height="180" alt="Левон">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Левон </span>(5 часов назад)
+            <p class="author-post_description">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 356</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-2.jpg" width="280" height="180" alt="Антон">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Антон </span>(12 часов назад)
+            <p class="author-post_description">
+              Соседи будут рады!
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 666</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-3.jpg" width="280" height="180" alt="Борис">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Борис </span>(20 часов назад)
+            <p class="author-post_description">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 215</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-4.jpg" width="280" height="180" alt="Сергей">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Сергей </span>(25 часов назад)
+            <p class="author-post_description">
+              Самая кубанская в мире!
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 4</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-5.jpg" width="280" height="180" alt="Максим">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Максим </span>(40 часов назад)
+            <p class="author-post_description">
+              Где снего то?
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 150</span>
+            </a>
+          </div>
+        </article>
+        <article class="author-post">
+          <a class="author-post__photo"  href="#">
+            <img src="img/photo-6.jpg" width="280" height="180" alt="Надежда">
+          </a>
+          <div class="author-post__article">
+            <span class="author-post__nick">Надежда </span>(45 часов назад)
+            <p class="author-post_description">
+              Всем GM и взаимные лайки!
+            </p>
+            <a class="author-post__like" href="#">
+              <span>Нравится: 2560</span>
+            </a>
+          </div>
+        </article>
+        <section class="public-post">
+          <p class="public-post__header">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <a href="" class="public-post__random-photo">
+            <img src="img/random-photo.jpg" width="280" height="374" alt="Лесная сказка">
+          </a>
+          <div class="post-editor">
+            <a class="post-editor post-editor--cut" href="#"></a>
+            <a class="post-editor post-editor--fill" href="#"></a>
+            <a class="post-editor post-editor--light" href="#"></a>
+            <input class="post-editor__range" type="range" name="range">
+          </div>
+          <div class="post-publish">
+            <a class="post-publish post-publish--send" href="#">Запостить</a>
+            <a class="post-publish post-publish--cancel-off" href="#">Отмена</a>
+          </div>
+        </section>
+      </section>
+    <footer class="inner-footer">
+      <div class="inner-footer__container">
+          <img class="inner-footer__logo" src="https://placeholder.it/100x150" width="147" height="47" alt="PINK">
+        <section class="inner-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--tw" href="https://vk.com">Twitter</a>
+            <a class="social-link social-link--fb" href="https://www.facebook.com">Facebook</a>
+            <a class="social-link social-link--yt" href="https://www.instagram.com">Youtube</a>
+          </div>
+        </section>
+        <section class="copyright">
+          Разработано
+          <a class="copyright copyright-link--ha" href="https://htmlacademy.ru">HTML Academy</a>
+       </section>
+    </div>
+   </footer>
+  </div>
+</div>
+</body>
+</html>
