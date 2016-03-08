@@ -11,7 +11,7 @@
         <strong>Pink</strong>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle main-nav__toggle--closed"></span>
+        <button class="main-nav__toggle main-nav__toggle--closed"></button>
         <div class="main-nav__container main-nav__container--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-class__items" href="index.html">Главная</a></li>
@@ -24,22 +24,22 @@
     </header>
     <div class="page-inner">
       <div class="main-impress">
-        <span>Конкурс на самое безбашеное путешествие с Пинк</span>
+        <h1 class="main-impress__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
       <section class="inner-form">
           <p class="inner-form__description">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
-          <form class="inner-form__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <label class="inner-form__caption" for="first-name-field">Имя</label><br>
-              <input id="first-name-field" type="text" name="first-name" placeholder="Введите ваше имя"><br>
-              <label class="inner-form__caption" for="last-name-field">Фамилия</label><br>
-              <input id="last-name-field" type="text" name="last-name" placeholder="Укажите фамилию"><br>
-              <label class="inner-form__caption" for="middle-name-field">Отчество</label><br>
-              <input id="middle-name-field" type="text" name="middle-name" placeholder="Ну и отчество тоже"><br>
+          <form class="inner-form__fields" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="contest-form">
+              <label class="inner-form__caption" for="first-name">Имя</label><br>
+              <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя"><br>
+              <label class="inner-form__caption" for="last-name">Фамилия</label><br>
+              <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию"><br>
+              <label class="inner-form__caption" for="middle-name">Отчество</label><br>
+              <input id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже"><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="contest-form">
               <legend class="inner-form__title">Ваши безбашенные достижения в путешествии</legend>
               <input id="selfie" type="checkbox" name="selfie" checked>
               <label class="inner-form__caption-checkbox" for="selfie">Сделал селфи с акулой</label><br>
@@ -54,13 +54,13 @@
               <input id="hotel" type="checkbox" name="hotel">
               <label class="inner-form__caption-checkbox" for="hotel">Разгромил отель</label><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="contest-form">
               <label class="inner-form__title" for="phone-number">Номерок телефончика</label><br>
               <input id="phone-number" type="text" name="phone" placeholder="Номер, пожалуйста"><br>
               <label for="address-field">Адресок почты</label><br>
               <input id="address-field" type="text" name="last-name" placeholder="Email, пожалуйста"><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="contest-form">
               <legend class="inner-form__title">С каким приложением путешествовали?</legend>
               <input id="apple" type="radio" name="application" value="apple" checked>
               <label class="inner-form__caption-radio" for="apple">Pink для iOS</label><br>
@@ -69,7 +69,7 @@
               <input id="microsoft" type="radio" name="application" value="microsoft">
               <label class="inner-form__caption-radio" for="microsoft">Windows Phone</label><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="contest-form">
               <legend class="inner-form__title">Опишите свои эмоции</legend>
               <textarea rows="5" cols="23" name="feedback-message">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
@@ -93,6 +93,6 @@
       </div>
      </footer>
     </div>
-  </div>
+   </div>
   </body>
 </html>
