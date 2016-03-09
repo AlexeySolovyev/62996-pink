@@ -52,7 +52,7 @@
       </section>
       <section class="promo">
         <header class="promo__header">
-            <p class="promo__slogan">Устали от мегаполиса?</p>
+            <p class="promo__slogan">Устали от серости мегаполиса?</p>
             <p class="promo__slogan">Нам есть, что вам предложить!</p>
         </header>
         <section class="features">
@@ -84,32 +84,32 @@
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </blockquote>
           </div>
-          <div class="feedback__item">
+          <div class="feedback__item feedback__hide">
             <h3 class="feedback__title">Анна Михайлова</h3>
             <blockquote class="feedback__description">
               «Нельзя, чтобы такое приложение оставалось только моим открытием!
               Спешу поделится им со всем миром, ребята если вы хотите ярких красок и новых ощущений - качайте PINK!»
             </blockquote>
           </div>
-          <div class="feedback__item">
+          <div class="feedback__item feedback__hide">
             <h3 class="feedback__title">Александр Немчук</h3>
             <blockquote class="feedback__description">
               «Будьте проще и понятнее для окружающих, дарите хорошее настроение окружающим!
               А PINK будет вашим инструментом, с помощью которого это будет сделать легче и интереснее»
             </blockquote>
           </div>
-          <form class="feedback-slider" action="https://echo.html.academy.ru" method="post">
-            <input class="feedback-slider__switcher" type="radio" name="feedback" value="1" checked>
-            <input class="feedback-slider__switcher" type="radio" name="feedback" value="2">
-            <input class="feedback-slider__switcher" type="radio" name="feedback" value="3">
+          <form class="slider" action="https://echo.html.academy.ru" method="post">
+            <input class="slider__switcher" type="radio" name="feedback" value="1" checked>
+            <input class="slider__switcher" type="radio" name="feedback" value="2">
+            <input class="slider__switcher" type="radio" name="feedback" value="3">
           </form>
         </div>
         </section>
       </section>
       <section class="rate-compare">
-        <table class="price">
+        <table class="price price-hide">
           <caption class="price-rate">
-            <div class="price-rate__banner-off">Хит</div>
+            <div class="price-rate__banner-off"></div>
             <span class="price-rate__title">База</span>
             <div class="price-rate__value">1,99 USD</div>
           </caption>
@@ -128,7 +128,7 @@
         </table>
         <table class="price">
           <caption class="price-rate">
-            <div class="price-rate__banner-off">Хит</div>
+            <div class="price-rate__banner-off"></div>
             <span class="price-rate__title">Стандарт</span>
             <div class="price-rate__value">3,99 USD</div>
           </caption>
@@ -145,9 +145,9 @@
             <td class="price__reach--off"></td>
           </tr>
         </table>
-        <table class="price">
+        <table class="price price-hide">
           <caption class="price-rate">
-            <div class="price-rate__banner-off">Хит</div>
+            <div class="price-rate__banner-off"></div>
             <span class="price-rate__title">Анлим</span>
             <div class="price-rate__value">9,99 USD</div>
           </caption>
@@ -165,11 +165,13 @@
           </tr>
         </table>
       </section>
-        <form class="rate-slider" action="https://echo.html.academy.ru" method="post">
-          <input class="rate-slider__switcher" type="radio" name="rate" value="1">
-          <input class="rate-slider__switcher" type="radio" name="rate" value="2" checked>
-          <input class="rate-slider__switcher" type="radio" name="rate" value="3">
+      <div class="price-slider">
+        <form class="slider" action="https://echo.html.academy.ru" method="post">
+          <input class="slider__switcher" type="radio" name="rate" value="1">
+          <input class="slider__switcher" type="radio" name="rate" value="2" checked>
+          <input class="slider__switcher" type="radio" name="rate" value="3">
         </form>
+      </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
@@ -179,25 +181,25 @@
       </p>
       <section class="contacts">
         <div class="contacts__phone">
-          <span>Звоните:</span>
-          <a href="tel:+78125556666">
+          <span class="contacts_appeal">Звоните:</span>
+          <a class="contacts__tel" href="tel:+78125556666">
             <span class="contacts__phone--number">+7 (812) 555-66-66</span>
           </a>
         </div>
-        <div class="contacts__email">
-          <span>Пишите:</span>
-          <a href="mailto:mail@htmlacademy.ru">
+        <div class="contacts__mail">
+          <span class="contacts_appeal">Пишите:</span>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
             <span class="contacts__email--mail">mail@htmlacademy.ru</span>
           </a>
         </div>
         <div class="contacts__address">
-          <span>Приезжайте в гости:</span>
+          <span class="contacts_appeal">Приезжайте в гости:</span>
             <span class="contacts__address--post">ул. Большая Конюшенная, 19/8</span>
         </div>
       </section>
     </div>
     <div class="map">
-      <div id="YMapsID" style="width:320px;height:320px"></div>
+      <div id="YMapsID" style="width:320px;height:250px"></div>
     </div>
   </footer>
   <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
