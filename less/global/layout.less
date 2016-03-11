@@ -1,4 +1,4 @@
-html, body {
+html {
   min-width: 320px;
   padding: 0;
 }
@@ -7,6 +7,22 @@ html, body {
   width: 320px;
   margin: 0 auto;
   padding: 0px 20px;
+
+  @media @tablets-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 span {

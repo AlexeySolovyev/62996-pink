@@ -1,8 +1,8 @@
 .main-nav {
-  display: none;
+  //display: none;
+  position: relative;
   background-color: #283645;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 
   &__list {
     padding: 0;
@@ -22,5 +22,12 @@
     padding-top: 15px;
     padding-bottom: 15px;
     color: #ffffff;
+  }
+}
+
+@media @tablets-widths {
+  .main-nav {
+    width: auto;
+    margin: 0;
   }
 }
