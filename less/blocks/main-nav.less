@@ -1,8 +1,10 @@
-.main-nav {
-  //display: none;
-  position: relative;
-  background-color: #283645;
-  margin: 0 auto;
+  .main-nav {
+    display: none;
+    position: relative;
+    width: 320px;
+    background-color: @blue-medium;
+    margin: 0 auto;
+  }
 
   &__list {
     padding: 0;
@@ -15,19 +17,33 @@
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: @bold;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #ffffff;
+    color: @white;
   }
-}
 
-@media @tablets-widths {
+@media @tablet-widths {
   .main-nav {
     width: auto;
+    min-height: 105px;
     margin: 0;
+  }
+
+  &__link {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: @bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: @white;
   }
 }
