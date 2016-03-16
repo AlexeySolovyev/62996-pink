@@ -1,5 +1,14 @@
 .action-download {
-  height: 270px;
+  margin-top: 390px;
+
+  &__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: @lighter;
+    color: @white;
+    padding-top: 25px;
+  }
 
 &__main-link {
   display: inline-block;
@@ -13,11 +22,10 @@
     border: 3px solid @white;
     border-radius: 50px;
     padding: 15px 40px;
-    margin-top: 25px;
+    margin-top: 28px;
   }
 
   &__buttons {
-    float: left;
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 25px;
@@ -30,5 +38,30 @@
     font-weight: @lighter;
     color: @white;
     text-align: center;
+  }
+
+  @media @tablet-widths {
+    position: absolute;
+    margin: 0;
+    top: 90px;
+    left: 95px;
+
+    &__title {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 40px;
+      line-height: 42px;
+      font-weight: @lighter;
+      width: 190px;
+      padding: 0;
+    }
+
+    &__main-link {
+      margin-left: -90px;
+      margin-bottom: 40px;
+    }
+
+    &__buttons {
+      
+    }
   }
 }

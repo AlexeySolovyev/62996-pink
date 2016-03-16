@@ -1,4 +1,27 @@
 .features {
   border: 1px solid red;
-  padding-bottom: 320px;
+
+  @media @tablet-widths {
+    height: 430px;
+  }
+
+  &__block {
+    float: right;
+    width: 300px;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font-family: "Opens Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+    padding-bottom: 20px;
+  }
+
+  &__description {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+  }
 }

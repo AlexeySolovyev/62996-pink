@@ -1,0 +1,29 @@
+.researching {
+  display: none;
+  border: 1px solid red;
+
+  @media @tablet-widths {
+    display: block;
+    height: 400px;
+
+    &__text {
+      float: right;
+      width: 300px;
+    }
+
+    &__header {
+      width: 160px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: @bold;
+      color: @black;
+      padding-top: 100px;
+    }
+
+    &__description {
+      width: 290px;
+      margin-top: 20px;
+    }
+  }
+}

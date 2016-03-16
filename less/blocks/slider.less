@@ -1,4 +1,22 @@
 .slider {
   border: 1px solid red;
   text-align: center;
+
+  &__slide--forward-out {
+    display: none;
+  }
+
+  &__slide--forward-in {
+    display: none;
+  }
+  
+  @media @tablet-widths {
+    &__slide--forward-out {
+      display: none;
+    }
+
+    &__slide--forward-in {
+      display: none;
+    }
+  }
 }
