@@ -1,0 +1,57 @@
+.inner-form {
+  border: 1px solid red;
+
+  &__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: @normal;
+    line-height: 30px;
+    text-align: center;
+    color: @red;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: block;
+    height: 115px;
+    width: 275px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: @light;
+    line-height: 30px;
+    text-align: center;
+    color: @blue-medium;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  &__order {
+    display: none;
+  }
+
+  &__caption {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: @red;
+    text-transform: uppercase;
+  }
+
+  @media @tablet-widths {
+
+    &__description {
+      width: 480px;
+      padding-top: 95px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 18px;
+      font-weight: @light;
+      line-height: 30px;
+      text-align: center;
+      color: @blue-medium;
+    }
+
+    &__order {
+      display: block;
+    }
+  }
+}

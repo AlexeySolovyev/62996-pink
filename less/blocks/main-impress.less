@@ -1,13 +1,31 @@
 .main-impress {
   border: 1px solid red;
+  background: @blue-background;
+  height: 170px;
 
   &__title {
-    text-align: center;
+    width: 230px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 24px;
     line-height: 28px;
-    font-weight: 200;
-    padding-top: 20px;
-    padding-bottom: 315px;
+    font-weight: @lighter;
+    text-align: center;
+    color: @white;
+    padding-top: 40px;
+  }
+
+  @media @tablet-widths {
+    background: @blue-background;
+    height: 330px;
+
+    &__title {
+      width: 480px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 50px;
+      line-height: 58px;
+      font-weight: @lighter;
+      text-align: center;
+      color: @white;
+    }
   }
 }
